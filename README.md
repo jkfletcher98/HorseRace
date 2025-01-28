@@ -36,7 +36,8 @@ for each space in track
 ```
 parameters(horse position, horse number)
 result is false
-if horse position is 15
-  that horse wins
+if horse position is equal to track length
   result is true
+  print 'horse {id} wins!'
+return result
 ```
