@@ -11,7 +11,11 @@ def main():
         for horse in TOTAL_HORSES:
             advance(horsePosition, horseNum)
             printLane(horsePosition, horseNum)
-
+            isWinner(horsePosition, horseNum)
+            if result == True:
+                keepGoing = False 
+        print("Press ENTER for next round")
+    
 def advance(horsePosition, horseNum):
     number = random.randint(0,1)
     horsePosition += number
@@ -23,4 +27,14 @@ def printLane(horsePosition, horseNum):
             print(horseNum)
         else:
             print(". ")
+
+def isWinner(horsePosition, horseNum):
+    result = False
+    if horsePosition == TRACK_LENGTH:
+        result = True
+        print(f"Horse {id} wins!")
+    return result
+
+if __name__ == "__main__":
+    main()
 
