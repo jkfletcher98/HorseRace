@@ -3,12 +3,13 @@
 import random
 
 TOTAL_HORSES = 5
-TRACKLENGTH = 15
+TRACK_LENGTH = 15
 
 def main():
+    horses = TOTAL_HORSES
     keepGoing = True
     while keepGoing:
-        for horse in TOTAL_HORSES:
+        for horse in horses:
             advance(horsePosition, horseNum)
             printLane(horsePosition, horseNum)
             isWinner(horsePosition, horseNum)
