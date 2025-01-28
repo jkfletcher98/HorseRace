@@ -36,14 +36,8 @@ for each space in track
 ```
 parameters(horse position, horse number)
 result is false
-<<<<<<< HEAD
 if horse position is equal to track length
   result is true
   print 'horse {id} wins!'
 return result
-=======
-if horse position is 15
-  result is true
-  print "Horse {id} wins!"`
->>>>>>> 468ef7b (Updated horseRace.py)
 ```
