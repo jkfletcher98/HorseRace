@@ -29,5 +29,19 @@ int advance(hn, horses){
 
 int printLane(hn, horses){
 	for (int space = 0; space < TRACK_LENGTH; space++){
-		if (space == horse){
-			printf("%i" /
+		if (space == horse)
+			printf("%i \n", hn);
+		else {
+			printf(". ");
+		} // end else
+	} // end for
+} // end printLane
+
+bool isWinner(hn, horses){
+	bool result = false;
+	if (horse == TRACK_LENGTH){
+		result = true;
+		printf("Horse %i wins! \n", hn);
+	} // end if
+	return result;
+} // end isWinner
